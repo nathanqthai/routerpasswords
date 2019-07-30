@@ -4,7 +4,6 @@ import ast
 from bs4 import BeautifulSoup
 import requests
 
-"""
 url = 'https://www.router-reset.com/default-password-ip-list'
 page_data = requests.get(url).text
 soup = BeautifulSoup(page_data, 'html.parser')
@@ -35,7 +34,6 @@ for vendor in router_data.keys():
 
 import pprint
 pprint.pprint(router_data)
-"""
 
 url = 'https://10-0-0-0-1.com/default-router-passwords-list/'
 soup = BeautifulSoup(requests.get(url).text, 'html.parser')
